@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {background-color:#DF0101;
+	color:#444;}
+
+
+
+#wrapper {
+	background: white;
+	margin:1em auto;
+	max-width: 900px;
+	padding: 15px;
+}	
+
+h1 {
+	font-size: 2em;
+	text-align:center;
+	margin-bottom:0.5e,;
+}
+
+.direction {
+	color:#ccc;
+	text-align:center;
+}
+
+form {margin-top:2em;}
+
+#search {
+	display:block;
+	border: 1px solid #999;
+	background:none;
+	padding: .3em;
+	font-size:1.5em;
+	width:100%;
+}
+
+form div { margin-top:1em;
+text-align:center;}
+
+.button {background-color:#d0451b;
+border-radius:3px;
+cursor:pointer;
+font-size:1.em;
+padding:6px 24px;}
+
+#search-results ul {
+	overflow: hidden;
+	margin-top:1em;
+}
+
+#search-results li {
+	float:left;
+	margin-bottom: 2em;
+	padding: 1em;
+	border:1 px solid #ccc;
+	border-bottom-width: 3px;
+}
+
+#search-results li img {
+	display:block;
+	max-width:100%;
+}
+
+#search-results li p {
+	padding-bottom:1em;
+	margin-bottom:1em;
+	border-bottom: 1px solid #ccc;
+
+}
+
+@media only screen and (min-width: 500px) {
+	#search-results li {
+		width: 48%;
+		float: left;
+		clear: both;
+	}
+	#search-results li:nth-child(2n) {
+		float: right;
+		clear: none;
+	}
+}
